@@ -1,0 +1,104 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(236, 222, 213);
+    text-align: center;
+    border: groove;
+    
+   
+}
+
+#wrapper{
+    background-color: rgb(136, 243, 243);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px 15px 0px 0px;
+    
+
+}
+
+header {
+    max-width:700px;
+    background-color: aquamarine;
+    box-shadow: 2px 4px 20px rgb(5, 2, 0);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px 20px 20px 20px;
+    
+}
+
+nav {
+    margin-bottom: 100px;
+    
+}
+
+#treepic{
+    width:250px;
+    border: thin solid black;
+    float: left;
+}
+#treepic img{
+    width: 250px;
+
+}
+
+.clear{
+    clear:both;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+
+nav li{
+    display: inline;
+
+}
+
+nav a {
+    display: block;
+    background-color: rgb(63, 101, 102);
+    color: white;
+    border-bottom: thin solid white;
+    padding: 10px 20px;
+    float: left;
+    margin-left: 10px;
+}
+
+nav a:hover{
+    color: cadetblue;
+    background-color: white;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 200;
+    font-style: initial;
+    text-align: justify;
+    text-transform: none;
+    text-shadow:10px;
+    margin-bottom: 1cm;
+    margin-top: 1cm;
+    margin-right: 1cm;
+    margin-left: 1cm;
+}
+
+.font{
+    font-size: larger;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+footer{
+    background-image:url('logo.jpg');
+    background-repeat: no-repeat;
+    background-position: right ;
+    height: 100px; 
+    
+}
+
+
+

@@ -1,0 +1,88 @@
+boby {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1px;
+    padding:1px,
+}
+
+header {
+    background-color: blueviolet;
+    color: whitesmoke;
+    text-align: center;
+    padding: 50px,
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+nav li{
+    display: inline;
+}
+
+nav a {
+    display: block;
+   
+    color: rgb(39, 39, 230);
+    border-bottom: thin solid white;
+    float: left;
+    margin-left: 5cm;
+
+}
+nav a:hover{
+    color: cadetblue;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    margin: 5px;
+
+
+
+}
+
+aside {
+    padding: 20px;
+    margin-right: 5px;
+    width: 14%;
+}
+
+
+.profile-cards {
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 10px;
+    margin-top: 30px;
+
+}
+
+.card{
+    background-color: rgb(224, 212, 212);
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 1px;
+    text-align: left;
+    
+    
+   
+}
+
+.footer-link {
+ display: grid;
+ grid-template-columns: 150px 150px 150px 150px 150px;
+ padding-top: 30px;
+ margin-left: 200px;
+ gap:10px;
+ margin-bottom: 10px;
+
+
+}
+
+.footer-link a:hover{
+    color: cadetblue;
+    background-color: white;
+}
+

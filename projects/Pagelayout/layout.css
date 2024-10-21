@@ -58,7 +58,7 @@ nav li{
 nav a {
     display: block;
     background-color: rgb(63, 101, 102);
-    color: white;
+    color: #f3e0e0;
     border-bottom: thin solid white;
     padding: 10px 20px;
     float: left;

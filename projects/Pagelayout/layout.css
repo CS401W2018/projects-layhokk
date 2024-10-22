@@ -27,6 +27,8 @@ header {
 
 nav {
     margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
     
 }
 

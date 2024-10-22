@@ -1,20 +1,21 @@
 boby {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 1px;
-    padding:1px,
+    padding:1px;
 }
 
 header {
     background-color: blueviolet;
     color: whitesmoke;
     text-align: center;
-    padding: 50px,
+    padding: 50px;
 
 }
 
 nav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
 }
 
@@ -24,10 +25,8 @@ nav li{
 
 nav a {
     display: block;
-   
     color: rgb(39, 39, 230);
     border-bottom: thin solid white;
-    float: left;
     margin-left: 5cm;
 
 }

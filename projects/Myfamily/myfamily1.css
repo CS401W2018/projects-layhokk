@@ -1,0 +1,127 @@
+boby {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1px;
+    padding:1px;
+}
+
+header {
+    background-color: blueviolet;
+    color: whitesmoke;
+    text-align: center;
+    padding: 2px;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+nav ul{
+    display: flex;
+
+}
+
+nav li{
+    display: inline;
+}
+
+nav a {
+    display: black;
+    color: rgb(39, 39, 230);
+    border-bottom: thin solid white;
+    margin-left: 5cm;
+    text-decoration: none;
+}
+
+
+
+nav a:hover{
+    color: cadetblue;
+    background-color: white;
+}
+
+h4{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    margin: 1 px;
+    padding: 9px;
+    margin-left: 130px;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    margin: 5px;
+
+}
+
+aside {
+    padding: 20px;
+    margin-right:40px;
+    width: 20%;
+    margin-top: 15px;
+    
+
+}
+
+
+.profile-cards {
+    display: grid;
+    flex-wrap: wrap ;
+
+    gap: 35px;
+    margin-top: 30px;
+
+    grid-template-columns: auto auto auto;
+    width: 10px;
+
+
+}
+
+.card{
+    background-color: rgb(224, 212, 212);
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 1px;
+    text-align: center;
+    box-shadow: 4px 4px 4px rgb(50, 50, 50, 50%);   
+    
+}
+
+@media only screen and (max-width: 600px){
+    
+
+ 
+    .container{
+        flex-direction: column;
+    }
+
+
+    .profile-cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+         flex-direction: column;
+         display: flex;
+    }
+    nav a {
+         border-bottom: thin solid white ;
+         padding-left: 50px;
+    }
+    .main-card {
+        order: -1;
+    }
+
+    aside{
+        order: reverse;
+    }
+    
+
+    
+}
+
+

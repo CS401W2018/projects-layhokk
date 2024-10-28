@@ -1,0 +1,24 @@
+body {
+    display: Flex;
+    Flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+aside {
+    width: 25%;
+    float: left;
+}
+
+article{
+    flex:1;
+    margin: 10px;
+}
+
+

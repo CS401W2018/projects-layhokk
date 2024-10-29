@@ -38,7 +38,7 @@ nav a:hover{
 h4{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
-    margin: 1 px;
+    margin: 1px;
     padding: 9px;
     margin-left: 125px;
     font-size: 20px;
@@ -142,7 +142,7 @@ aside figure img{
         order: 2;
         width: 80%;
         margin: auto;
-        padding: auto;
+        padding: 10px;
     }
    h4{
     margin: 0;

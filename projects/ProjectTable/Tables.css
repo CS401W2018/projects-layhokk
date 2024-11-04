@@ -47,6 +47,7 @@ nav a:hover{
     padding: 15px;
     border-radius: 5px;
     order: 2;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .table-section {
@@ -64,6 +65,7 @@ caption {
     font-weight: bold;
     margin-bottom: 10px;
     font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 th, td {

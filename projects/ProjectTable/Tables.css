@@ -63,6 +63,7 @@ table {
 caption {
     font-weight: bold;
     margin-bottom: 10px;
+    font-size: larger;
 }
 
 th, td {

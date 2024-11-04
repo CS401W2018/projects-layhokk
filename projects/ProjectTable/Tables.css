@@ -75,12 +75,12 @@ th, td {
 }
 
 th {
-    background-color: #c92e2e;
-    color: #f8f2f2;
+    background-color: #a03b3b;
+    color: #e1f3fd;
 }
 
 tbody tr:nth-child(odd) {
-    background-color: #d69494;
+    background-color: #f59d9d;
 }
 
 tbody tr:nth-child(even) {

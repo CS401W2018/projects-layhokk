@@ -1,0 +1,91 @@
+boby {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 1px;
+    padding:1px;
+}
+
+header {
+    background-color: blueviolet;
+    color: whitesmoke;
+    text-align: center;
+    padding: 2px;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    display:flex;
+    width:100%;
+   
+
+}
+
+nav a {
+    display: flex;
+    color: rgb(39, 39, 230);
+    border-bottom: thin solid white;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+
+nav a:hover{
+    color: cadetblue;
+    background-color: white;
+}
+
+
+.content-wrapper {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 5px;
+    order: 2;
+}
+
+.table-section {
+    flex: 3;
+    order:1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #c92e2e;
+    color: #f8f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #d69494;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #91c0be;
+}
+
+
+tfoot{
+    background-color: #e7da1d;
+    font-weight: bolder;
+}

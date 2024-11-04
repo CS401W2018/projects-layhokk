@@ -29,7 +29,6 @@ nav a {
 }
 
 
-
 nav a:hover{
     color: cadetblue;
     background-color: white;
@@ -90,8 +89,8 @@ aside figure img{
     padding: 1px;
     text-align: center;
     box-shadow: 4px 4px 4px rgb(50, 50, 50, 50%);   
-    width: 100%;
-    
+    width: 100%;  
+
 }
 
 .card img {
@@ -144,6 +143,7 @@ aside figure img{
         margin: auto;
         padding: 10px;
     }
+    
    h4{
     margin: 0;
     padding: 0;

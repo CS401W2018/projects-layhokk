@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="Form.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="get">
+            First Name: <input type="text" name="first" value="Jonh" required="required"><br>
+            Last Name: <input type="text" name="last" value="Tim"><br>
+            Password: <input type="password" name="pass"><br>
+             
+             <input type="checkbox" name="remember" checked> Remember Me<br>
+             Grade:
+             <input type="radio" name="grade" value="Freshman"> Freshman<br>
+             <input type="radio" name="grade" value="Sophmore"> Sophmore<br>
+             <input type="radio" name="grade" value="Junior"> Junior<br>
+             <input type="radio" name="grade" value="Senior"> Senoir<br>
+             <select name="state" id="state">
+                <option valure="blank"></option>
+                <option valure="Hawaii">Hawaii</option>
+                <option valure="California">California</option>
+                <option valure="Utah">Utah</option>
+                <option valure="Colorado">Colorado</option>
+                
+             </select>
+             <input type="week"> <br>
+             <input type="time"> <br>
+             <input type="submit"><br>
+        </form>
+
+    </main>
+    <h2>The form tag has an "action" attribute. What does it do?</h2>
+    <p>The action tag specifies the URL where the form data should be sent when the form is submitted</p>
+    <h2>The form tag has a "method" attribute. What does it do?</h2>
+    <p> The method attribute defines the HTTP method used to send the form data. The two common values are GET and POST. Get is used to request data from a specifie resource. POST is generally used for submitting sensitive information, like passwords or personal data.</p>
+    <h2>What is the difference between a "POST" and a "GET"?</h2>
+    <p>GET appends data to the URL, making it visible in the address bar, while POST keeps data in the request body. For another example, GET is ideal for retrieving data without altering server state, while POST is used for actions like submitting forms or modifying data on the server.</p>
+    <footer>
+        <p>&copy; 2024 layhok </p>
+    </footer>
+    
+</body>
+</html>

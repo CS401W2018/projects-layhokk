@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="Formstyle.css">
+
+
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <form action="processing.html" method="post">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="lname"> First Name:</label>
+                    <input type="text" type="text" name"last" value="Joe" required>
+                </div>
+                
+                <div class="form-row">
+                    <label for="lname"> Last Name:</label>
+                    <input type="text" id="lname" name"last" placeholder="Last Name">
+                </div>
+                <div class="form-row">
+                    <label for="pass"> Password:</label>
+                    <input type="Passoword" name="pass" id="pass">
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="remember" checked>
+                        Remenmber Me
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="state">state</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="CA">California</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+    
+                <div class="form-row">
+                    <label for="comments">comments</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Class:</div>
+                    <label><input type="radio" name="grade" value="Freshman"> Freshman</label>
+                    <label><input type="radio" name="grade" value="Sophmore"> Sophmore</label>
+            
+                </div>
+                <div class="ckeck-row">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+
+    </main>
+    <h2>What are different ways to style your form?</h2>
+    <p>There are many style my form such as inputs, buttons, and labels individually to make the form more readable and I use simple CSS properties to set padding, margin, border-radius, and colors for a clean look</p>
+    <h2>Why does the professor like to use flex?</h2>
+    <p>Because flex makes it easy to create responsive layouts without needing complex CSS or media queries. Flex items can automatically adjust their size and wrap based on the available space, which is perfect for forms that need to adapt to different screen sizes</p>
+    
+    <footer>
+        <p>&copy; 2024 layhok </p>
+    </footer>
+    
+</body>
+</html>

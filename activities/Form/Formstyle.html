@@ -5,39 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <link rel="stylesheet" href="Formstyle.css">
-
-
 </head>
 <body>
     <header>
         <h1>Web Design</h1>
     </header>
     <main>
-        <form action="processing.html" method="post">
+        <form action="processing.html" method="post" id="myForm">
             <fieldset>
                 <legend>Sign Up</legend>
                 <div class="form-row">
-                    <label for="lname"> First Name:</label>
-                    <input type="text" type="text" name"last" value="Joe" required>
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="firstName" name="first" placeholder="First Name">
                 </div>
                 
                 <div class="form-row">
-                    <label for="lname"> Last Name:</label>
-                    <input type="text" id="lname" name"last" placeholder="Last Name">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lastName" name="last" placeholder="Last Name">
                 </div>
+                
                 <div class="form-row">
-                    <label for="pass"> Password:</label>
-                    <input type="Passoword" name="pass" id="pass">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
                 </div>
+                
                 <div class="check-row">
                     <div class="spacer"></div>
                     <label>
                         <input type="checkbox" name="remember" checked>
-                        Remenmber Me
+                        Remember Me
                     </label>
                 </div>
+                
                 <div class="form-row">
-                    <label for="state">state</label>
+                    <label for="state">State:</label>
                     <select name="state" id="state">
                         <option value="blank"></option>
                         <option value="CA">California</option>
@@ -47,31 +48,54 @@
                 </div>
     
                 <div class="form-row">
-                    <label for="comments">comments</label>
+                    <label for="comments">Comments:</label>
                     <textarea name="comments" id="comments"></textarea>
                 </div>
+                
                 <div class="check-row">
                     <div class="spacer">Class:</div>
                     <label><input type="radio" name="grade" value="Freshman"> Freshman</label>
-                    <label><input type="radio" name="grade" value="Sophmore"> Sophmore</label>
-            
+                    <label><input type="radio" name="grade" value="Sophomore"> Sophomore</label>
                 </div>
-                <div class="ckeck-row">
+                
+                <div class="check-row">
                     <div class="spacer"></div>
-                    <input type="submit">
+                    <input type="submit" value="Submit">
                 </div>
             </fieldset>
         </form>
-
     </main>
-    <h2>What are different ways to style your form?</h2>
-    <p>There are many style my form such as inputs, buttons, and labels individually to make the form more readable and I use simple CSS properties to set padding, margin, border-radius, and colors for a clean look</p>
-    <h2>Why does the professor like to use flex?</h2>
-    <p>Because flex makes it easy to create responsive layouts without needing complex CSS or media queries. Flex items can automatically adjust their size and wrap based on the available space, which is perfect for forms that need to adapt to different screen sizes</p>
+    
+    <h2>What is JavaScript? How did it get its name?</h2>
+    <p>JavaScript is a high-level, dynamic programming language that is widely used for web development. It allows developers to create interactive and dynamic content on websites, like animations, form validations, and various user interface enhancements. The initial name was Mocha, which later became LiveScript during its early development phase.The name was eventually changed to JavaScript as part of a marketing partnership between Netscape and Sun Microsystems, the company behind the Java programming language</p>
+    
+    <h2>What are the two ways you can run JavaScript?</h2>
+    <p>In a Web Brower and On a Server or Locally via Node.js</p>
+    <h2>What was the most popular front-end js library?</h2>
+    <p>Query became immensely popular because it simplified common tasks in JavaScript, like DOM manipulation, event handling and animations.</p>
+    <h2>What is the most popular front-end js library today?</h2>
+    <p>React is widely regarded as the most popular front-end JavaScript library. Developed and maintained by Facebook (now Meta)</p>
     
     <footer>
-        <p>&copy; 2024 layhok </p>
+        <p>&copy; 2024 layhok</p>
     </footer>
     
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
+            const formData = {
+                firstName: firstName,
+                lastName: lastName,
+            }
+            if (!firstName || !lastName) {
+                alert("First name and last name are required!");
+                return;
+            }
+            console.log(formData);
+            alert("You submitted the form!");
+        })
+    </script>
 </body>
 </html>

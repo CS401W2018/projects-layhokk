@@ -12,6 +12,7 @@
     </header>
     <main>
         <form action="processing.html" method="post" id="myForm">
+            <div id="message"></div>
             <fieldset>
                 <legend>Sign Up</legend>
                 <div class="form-row">
@@ -65,7 +66,10 @@
             </fieldset>
         </form>
     </main>
-    
+    <h2>What is AJAX?</h2>
+    <p>AJAX  is a web development technique that allows web applications to update parts of a web page without reloading the entire page. This creates a more dynamic and interactive user experience.Key </p>
+    <h2>Why do you put your JS Code in a separate file?</h2>
+    <p>We keep the JS Code in one place and separates it from the content becuase it makes both files easier to manage.</p>
     <h2>What is JavaScript? How did it get its name?</h2>
     <p>JavaScript is a high-level, dynamic programming language that is widely used for web development. It allows developers to create interactive and dynamic content on websites, like animations, form validations, and various user interface enhancements. The initial name was Mocha, which later became LiveScript during its early development phase.The name was eventually changed to JavaScript as part of a marketing partnership between Netscape and Sun Microsystems, the company behind the Java programming language</p>
     
@@ -88,14 +92,37 @@
             const formData = {
                 firstName: firstName,
                 lastName: lastName,
+                password: document.getElementById('pass').value,
+                state: document.getElementById('state').value,
             }
             if (!firstName || !lastName) {
                 alert("First name and last name are required!");
                 return;
             }
+           
+        
+
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "sumbit.json", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState===4 && xhr.status==200){
+                    const response=JSON.parse(xhr.responseText)
+                    document.getElementsByID('message').innerHTML=response.message;
+                    document.getElementsByID('message').innerHTML="";
+                } else if (xhr.readyState===4){
+                    alert('Error submitting from.');
+               
+                }
+
+            };
+            xhr.send(JSON.stringify(formData));
+            
             console.log(formData);
             alert("You submitted the form!");
-        })
+        });
+            
+           
     </script>
 </body>
 </html>

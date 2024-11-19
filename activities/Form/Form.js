@@ -23,21 +23,22 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
         firstName: firstName,
         lastName: lastName,
         password: document.getElementById('pass').value,
-        age:age,
+        age: age,
         phone: document.getElementById('phone').value,
         state: state,
-        comments: document.getElementById('comments').value
+        comments: document.getElementById('comments').value,
+        
     };
 
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "submit.json", true);
+    xhr.open("POST", "submit.json", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
 
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4) {
             if (xhr.status === 200) {
                 const response = JSON.parse(xhr.responseText);
-                document.getElementById('message').innerHTML = response.message || "Form submitted successfully!";
+                alert(response.message || "Form submitted successfully!");
             } else {
                 alert('Error submitting form.');
             }

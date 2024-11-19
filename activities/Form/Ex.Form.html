@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
-    <link rel="stylesheet" href="Ex.Form.css">
+    <link rel="stylesheet" href="Formstyle.css">
 </head>
 <body>
     <header>
@@ -12,20 +12,41 @@
     </header>
     <main>
         <form action="processing.html" method="post" id="myForm">
-            First Name: <input type="text" id="firstName" name="frist" placeholder="First Name">
-            Last Name: <input type="text" id="lastName" name="last" placeholder="Last Name">
-            Password: <input type="password" name="pass" id="password"><br>
-            <input type="checkbox" name="remember" checked id="age"><br>
-            Age: <input type="number" name="age" id="age"><br>
-            Class:
-            <input type="radio" value="freshman"> Freshman<br>
-            <input type="radio" value="sophomore"> Sophomore<br>
-            <input type="radio" value="junior"> Junior<br>
-            State: <select name="state" id="state">
-                <option value="blank" disabled selected>Make Selection</option>
-                <option value="CA">California</option>
-                <option value="HI">Hawaii</option>
-                <option value="UT">Utah</option> </select>
+            <div id="message"></div>
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="firstName" name="first" placeholder="First Name">
+                </div>
+                
+                <div class="form-row">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lastName" name="last" placeholder="Last Name">
+                </div>
+                
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                </div>
+                
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="remember" checked>
+                        Remember Me
+                    </label>
+                </div>
+                
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="CA">California</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
     
                 <div class="form-row">
                     <label for="comments">Comments:</label>
@@ -42,15 +63,22 @@
                     <div class="spacer"></div>
                     <input type="submit" value="Submit">
                 </div>
-            
+            </fieldset>
         </form>
     </main>
+    <h2>What is AJAX?</h2>
+    <p>AJAX  is a web development technique that allows web applications to update parts of a web page without reloading the entire page. This creates a more dynamic and interactive user experience.Key </p>
+    <h2>Why do you put your JS Code in a separate file?</h2>
+    <p>We keep the JS Code in one place and separates it from the content becuase it makes both files easier to manage.</p>
+    <h2>What is JavaScript? How did it get its name?</h2>
+    <p>JavaScript is a high-level, dynamic programming language that is widely used for web development. It allows developers to create interactive and dynamic content on websites, like animations, form validations, and various user interface enhancements. The initial name was Mocha, which later became LiveScript during its early development phase.The name was eventually changed to JavaScript as part of a marketing partnership between Netscape and Sun Microsystems, the company behind the Java programming language</p>
     
-    <h2>What are different ways to style your form?</h2>
-    <p>You can style forms by targeting inputs, buttons, and labels individually to improve readability. Using simple CSS properties like padding, margin, border-radius, and colors creates a clean look.</p>
-    
-    <h2>Why does the professor like to use flex?</h2>
-    <p>Flexbox makes it easy to create responsive layouts without needing complex CSS or media queries. Flex items can automatically adjust their size and wrap based on the available space, which is perfect for forms that need to adapt to different screen sizes.</p>
+    <h2>What are the two ways you can run JavaScript?</h2>
+    <p>In a Web Brower and On a Server or Locally via Node.js</p>
+    <h2>What was the most popular front-end js library?</h2>
+    <p>Query became immensely popular because it simplified common tasks in JavaScript, like DOM manipulation, event handling and animations.</p>
+    <h2>What is the most popular front-end js library today?</h2>
+    <p>React is widely regarded as the most popular front-end JavaScript library. Developed and maintained by Facebook (now Meta)</p>
     
     <footer>
         <p>&copy; 2024 layhok</p>
@@ -59,19 +87,42 @@
     <script>
         document.getElementById('myForm').addEventListener('submit', function(event) {
             event.preventDefault();
-            const firstName = document.getElementById('firstname').value;
-            const lastName = document.getElementById('lastname').value;
+            const firstName = document.getElementById('firstName').value;
+            const lastName = document.getElementById('lastName').value;
             const formData = {
                 firstName: firstName,
                 lastName: lastName,
-            };
+                password: document.getElementById('pass').value,
+                state: document.getElementById('state').value,
+            }
             if (!firstName || !lastName) {
                 alert("First name and last name are required!");
                 return;
             }
+           
+        
+
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "sumbit.json", true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState===4 && xhr.status==200){
+                    const response=JSON.parse(xhr.responseText)
+                    document.getElementsByID('message').innerHTML=response.message;
+                    document.getElementsByID('message').innerHTML="";
+                } else if (xhr.readyState===4){
+                    alert('Error submitting from.');
+               
+                }
+
+            };
+            xhr.send(JSON.stringify(formData));
+            
             console.log(formData);
             alert("You submitted the form!");
-        })
+        });
+            
+           
     </script>
 </body>
 </html>

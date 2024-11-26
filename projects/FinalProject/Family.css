@@ -73,7 +73,7 @@ aside figure img{
 
 .profile-cards {
     display: grid;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
 
     gap: 35px;
     margin-top: 30px;
@@ -137,6 +137,7 @@ footer a:hover {
     .profile-cards{
         display: flex;
         flex-direction: column;
+        
 
     }
 

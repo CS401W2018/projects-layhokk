@@ -1,0 +1,47 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: bisque;
+    
+}
+
+header{
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(102, 89, 139);
+    padding: 10px;
+    text-align: center;
+    color: #cfcfdb;
+
+}
+
+nav{
+    background-color: rgb(184, 144, 93);
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+}
+
+nav a {
+    display: block;
+    padding: 20px 10px;
+    color: rgb(39, 36, 168);
+    
+}
+
+nav a:hover{
+    color:black;
+    background-color: rgb(120, 120, 207);
+}
+
+
+.treepic{
+    width:300px;
+    border: thin solid black;
+    float: left;
+    
+}
+.treepic img{
+    width: 300px;
+
+}

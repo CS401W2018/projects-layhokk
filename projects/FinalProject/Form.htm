@@ -60,89 +60,88 @@
 
 
         <div class="form-container">
-        <form action="processing.html" method="post" id="myForm">
+            <form action="processing.html" method="post" id="myForm">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <div class="form-row">
+                        <label for="firstName"> First Name: </label>
+                        <input type="text" id="firstName" name="first" placeholder="First Name">
+                    </div>
+
+                    <div class="form-row">
+                        <label for="lastName"> Last Name: </label>
+                        <input type="text" id="lastName" name="last" placeholder="Last Name">
+                    </div>
+                    
+                    <div class="form-row">
+                        <label for="password"> Password: </label>
+                        <input type="password" id="password" name="pass" required>
+                    </div>
+                
+                    <div class="check-box">
+                        <label>
+                            <input type="checkbox" name="remember" checked>Remember
+                        </label>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="age"> Age: </label>
+                        <input type="number" id="age" name="age">
+                    </div>
+                    
+                    
+
+
+
+                    <div class="check-row">
+                        <div class="spacer">Gender:</div>
+                        <label><input type="radio" name="gender" value="Male">Male</label>
+                        <label><input type="radio" name="gender" value="Female">Female</label>
+                    </div>
+
+                    
+                    <div class="check-row">
+                        <div class="spacer">Date:</div>
+                        <input type="week"> <br>
+                        
+                        
+                    </div>
+
+                
+                    <div class="form-row">
+                        <label for="state">State:</label>
+                        <select name="state" id="state">
+                            <option value="blank" disabled selected>Make Selection</option>
+                            <option value="Hawaii">Hawaii</option>
+                            <option value="California">California</option>
+                            <option value="Utah">Utah</option>
+                            <option value="Colorado">Colorado</option>
+                        </select>
+                    </div>
+
+                    
         
-            
-            
-            <fieldset>
-                <legend>Sign Up</legend>
-                <div class="form-row">
-                    <label for="firstName"> First Name: </label>
-                    <input type="text" id="firstName" name="first" placeholder="First Name">
-                </div>
+                    <div class="form-row">
+                        <label for="phone">Phone:</label> 
+                        <input type="tel" name="phone" id="phone" placeholder="(XXX)XXX-XXXX" required> 
+                    </div>
 
-                <div class="form-row">
-                    <label for="lastName"> Last Name: </label>
-                    <input type="text" id="lastName" name="last" placeholder="Last Name">
-                </div>
-                
-                <div class="form-row">
-                    <label for="password"> Password: </label>
-                    <input type="password" id="password" name="pass" required>
-                </div>
-               
-                <div class="check-box">
-                    <label>
-                        <input type="checkbox" name="remember" checked>Remember
-                    </label>
-                </div>
-
-                <div class="form-row">
-                    <label for="age"> Age: </label>
-                    <input type="number" id="age" name="age">
-                </div>
-                
-                
-
-
-
-                <div class="check-row">
-                    <div class="spacer">Gender:</div>
-                    <label><input type="radio" name="gender" value="Male">Male</label>
-                    <label><input type="radio" name="gender" value="Female">Female</label>
-                </div>
-
-                
-                <div class="check-row">
-                    <div class="spacer">Date:</div>
-                    <input type="week"> <br>
                     
+                    <div class="form-row">
+                        <label for="comments">Comments:</label>
+                        <textarea name="comments" id="comments"></textarea>
+                    </div>
+
                     
-                </div>
-
+                    <div class="submit">
+                        <label><input type="submit" value="Submit"></label>
+                    </div>
                
-                <div class="form-row">
-                    <label for="state">State:</label>
-                    <select name="state" id="state">
-                        <option value="blank" disabled selected>Make Selection</option>
-                        <option value="Hawaii">Hawaii</option>
-                        <option value="California">California</option>
-                        <option value="Utah">Utah</option>
-                        <option value="Colorado">Colorado</option>
-                    </select>
-                </div>
+               </fieldset>
+            </form>
 
-                
-    
-                <div class="form-row">
-                    <label for="phone">Phone:</label> 
-                    <input type="tel" name="phone" id="phone" placeholder="(XXX)XXX-XXXX" required> 
-                </div>
-
-                
-                <div class="form-row">
-                    <label for="comments">Comments:</label>
-                    <textarea name="comments" id="comments"></textarea>
-                </div>
-
-                
-                <div class="submit">
-                    <label><input type="submit" value="Submit"></label>
-                </div>
-               
-            </fieldset>
         </div>
-        </form>
+        
     </main>
     
 

@@ -1,0 +1,53 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    border: thin solid black;
+    width: 100%;
+}
+
+header{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(143, 143, 84);
+    padding: 10px 0px;
+    text-align: center;
+    color: rgb(32, 31, 28);
+}
+    
+nav{
+    background-color: antiquewhite;
+    padding: 10px;
+    display: block;
+    justify-content: space-around;
+
+    
+}
+
+nav a {
+    display: flex;
+    padding: 5px;
+
+    
+
+}
+
+nav a:hover{
+    
+    background-color: black;
+}
+
+.wrapper{
+    display: flex;
+    width: 0px;
+    margin-left: 40%;
+    ma
+
+}
+
+/* Style for text with a border */
+.card h2, .card p, .card ol li, .card ul li {
+    border: 1px solid black; /* Add a solid black border */
+    padding: 10px;           /* Add padding to make it look neat */
+    margin: 20px 0;           /* Add margin to separate the elements */
+    display: inline-block;   /* Optional: Makes the border wrap tightly around the text */
+    border-radius: 5px; 
+                             /* Optional: Adds rounded corners */
+}

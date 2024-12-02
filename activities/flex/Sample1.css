@@ -1,0 +1,49 @@
+body{
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+header{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: beige;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    background-color: rgb(42, 122, 122);
+    justify-content: space-around;
+    display: flex;
+    
+    
+    
+}
+
+nav a {
+    display: block;
+    padding: 20px;
+    
+}
+
+nav a:hover{
+    color: bisque;
+    background-color: rgb(145, 126, 102);
+
+}
+
+.profle-cards{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto auto;
+    width: 10%;
+    padding: 10px;
+        
+}
+
+#class{
+    background-color: rgb(189, 136, 68);
+    border: thin solid darkblue;
+    
+}

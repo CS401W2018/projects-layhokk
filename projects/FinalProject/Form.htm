@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>My Family Members</title>
+    <link rel="stylesheet" href="From.css" media="screen">
+</head>
+<body>
+    <header>
+        <h1>Media Daily</h1>
+    </header>
+    <nav>
+        
+        <a href="Windturbine.html">Home</a>
+        <a href="Family.html">Family</a>
+        <a href="Table.html">Table</a>
+        <a href="Pakistan.html">Pakistan</a>
+        <a href="PhoneShop.html">iPhone 6</a> 
+        <a href="Form.htm">Form</a>     
+    </nav>
+    <main>
+        <div id="message" class="hidden">
+            Your information has been submitted
+        </div>
+        
+
+        <h2>Camp Adventures</h2>
+        <div class="introduction">
+           <p> <span class="Newfont"> Camp Adventures is a program designed for adults seeking to experience thrilling adventures on the island. Participants from diverse backgrounds and cultures across the globe come together to engage in this enriching experience. The program is organized by Media Daily and offers a variety of activities to enhance participants' enjoyment and connection with nature.
+
+            Highlights of the program include music, food, and dancing events held in the evenings, fostering a vibrant and communal atmosphere. We warmly invite all adults interested in camping to sign up and embark on this unforgettable journey.
+            
+            We look forward to welcoming you soon! </span></p>
+        </div>
+        
+        <div class="profile-cards">
+            
+            
+                
+                <article class="card">
+                    <img src="PP1.jpg" alt="Profile Picture Of Kiri">
+                    <h3>Tents</h3>
+                    <p>Each standard tent provided can accommodate two people comfortably. If you require a larger tent, please inform us in advance, and we will make the necessary arrangements.</p>
+                </article>
+
+                <article class="card">
+                    <img src="P11.jpg" alt="Profile Picture of Dara">
+                    <h3>Place to Bonfire</h3>
+                    <p>There are two designated locations for bonfires. To ensure safety, each fire will be closely monitored by a designated individual to prevent any potential fire hazards.</p>
+                </article>
+                <article class="card">
+                    <img src="PP2.jpg" alt="Profile Picture Of Sreyroth">
+                    <h3>Place to Cook Food</h3>
+                    <p>All meals will be prepared by Media Daily. Participants are welcome to choose the foods they prefer. However, we kindly request that you avoid preparing excessive amounts of food to minimize waste. This space will be equipped with the necessary facilities to ensure a safe and enjoyable cooking experience.</p>
+    
+                </article>
+                      
+        </div>
+
+
+        <div class="form-container">
+        <form action="processing.html" method="post" id="myForm">
+        
+            
+            
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="firstName"> First Name: </label>
+                    <input type="text" id="firstName" name="first" placeholder="First Name">
+                </div>
+
+                <div class="form-row">
+                    <label for="lastName"> Last Name: </label>
+                    <input type="text" id="lastName" name="last" placeholder="Last Name">
+                </div>
+                
+                <div class="form-row">
+                    <label for="password"> Password: </label>
+                    <input type="password" id="password" name="pass" required>
+                </div>
+               
+                <div class="check-box">
+                    <label>
+                        <input type="checkbox" name="remember" checked>Remember
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label for="age"> Age: </label>
+                    <input type="number" id="age" name="age">
+                </div>
+                
+                
+
+
+
+                <div class="check-row">
+                    <div class="spacer">Gender:</div>
+                    <label><input type="radio" name="gender" value="Male">Male</label>
+                    <label><input type="radio" name="gender" value="Female">Female</label>
+                </div>
+
+                
+                <div class="check-row">
+                    <div class="spacer">Date:</div>
+                    <input type="week"> <br>
+                    
+                    
+                </div>
+
+               
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank" disabled selected>Make Selection</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="California">California</option>
+                        <option value="Utah">Utah</option>
+                        <option value="Colorado">Colorado</option>
+                    </select>
+                </div>
+
+                
+    
+                <div class="form-row">
+                    <label for="phone">Phone:</label> 
+                    <input type="tel" name="phone" id="phone" placeholder="(XXX)XXX-XXXX" required> 
+                </div>
+
+                
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+
+                
+                <div class="submit">
+                    <label><input type="submit" value="Submit"></label>
+                </div>
+               
+            </fieldset>
+        </div>
+        </form>
+    </main>
+    
+
+
+   
+    
+    <footer>
+        <p>&copy; 2024 Media Daily. All rights reserved.</p>
+        <p>
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Contact Us</a>
+        </p>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>

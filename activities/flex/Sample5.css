@@ -1,0 +1,39 @@
+body{
+    background-color: beige;
+}
+
+header{
+    font-family: 'Courier New', Courier, monospace;
+   
+    text-align: center;
+    background-color: bisque;
+    padding: 10px;
+    color: blue;
+}
+
+nav{
+    background-color: rgb(201, 153, 95);
+    padding: 10px;
+    justify-content: space-around;
+    display: flex;
+    
+    
+}
+
+nav a {
+    color: rgb(16, 41, 41);
+    background: none;
+    display: block;
+
+}
+
+.card{
+    font-size: larger;
+    grid-template-columns: repeat(2, 1fr);
+    border: thin solid black;
+    margin: 10px;
+    display: grid;
+    gap:1em;
+    text-align:;
+    
+}

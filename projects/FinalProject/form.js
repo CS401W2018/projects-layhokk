@@ -8,10 +8,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
         alert("Please provide your full name.");
         return;
     }
-    if (!age || age < 18) {
-        alert("You must be 18 years or older to submit this form.");
-        return;
-    }
+ 
 
     const data = {
         firstName: first,
@@ -36,7 +33,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     const messageDiv = document.getElementById("message");
     messageDiv.classList.remove("hidden");
     
-    // Hide the form (optional)
+   
     document.querySelector(".form-container").style.display = "none";
 
 

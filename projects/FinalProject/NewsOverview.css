@@ -76,11 +76,10 @@ table {
     margin-top: 15px;
 }
 
-caption {
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: larger;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+.current{
+    background: #575757;
+
 }
 
 th{
@@ -109,11 +108,6 @@ tbody tr:nth-child(even) {
     background-color: #8977a0;
 }
 
-
-tfoot{
-    background-color: #b9aa25c9;
-    font-weight: bolder;
-}
 
 
 footer {
@@ -165,11 +159,7 @@ footer a:hover {
     footer {
         font-size: 14px;
     }
-    .table-section {
-        order: 0;
-        width: 100%;
-        padding: 10px;
-    }
+
 
 
     .sidebar {

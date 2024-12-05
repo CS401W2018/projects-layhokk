@@ -14,7 +14,10 @@ header {
     padding: 10px 0;
 }
 
+.current{
+    background: #575757;
 
+}
 nav {
     display: flex;
     justify-content: center;
@@ -47,6 +50,7 @@ h2{
     margin-bottom: 20px;
     text-align: justify;
     text-indent: 35px;
+    text-align: center;
 
 }
 
@@ -54,9 +58,12 @@ h2{
     font-family: "Georgia", serif;
     font-size: 18px;
     color: #555;
+    text-align: center;
     
     
 }
+
+
 
 .form-container {
     display: flex;
@@ -113,14 +120,7 @@ fieldset{
     
 }
 
-legend {
-    border:thin solid #000;
-    background-color: blue;
-    padding:10px;
-    color:white;
-    
 
-}
 
 .form-row input{
     padding: 5px;

@@ -3,33 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Online Shop</title>
+  <title>Online Shop</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
-    <h1>My Online Shop</h1>
+    <h1>🔥 July 4th Sale - Online Shop 🔥</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">Cart</a>
+      <input type="text" placeholder="Search products...">
+      <button onclick="openCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
     </nav>
   </header>
 
-  <main>
-    <section class="products">
-      <div class="product-card">
-        <img src="https://via.placeholder.com/150" alt="Product 1">
-        <h2>Product Name</h2>
-        <p>$19.99</p>
-        <button>Add to Cart</button>
-      </div>
-      <!-- Add more product cards here -->
-    </section>
+  <section class="categories">
+    <button>Recommended</button>
+    <button>Smart Home</button>
+    <button>Appliances</button>
+    <button>Tools</button>
+    <!-- Add more categories -->
+  </section>
+
+  <main class="products">
+    <!-- Product Card -->
+    <div class="product">
+      <img src="images/chainsaw.jpg" alt="Mini Chainsaw">
+      <h3>Mini Chainsaw Cordless</h3>
+      <p>$20.33 <span class="old-price">$46.68</span></p>
+      <button onclick="addToCart('Mini Chainsaw', 20.33)">Add to Cart</button>
+    </div>
+    <!-- More products -->
   </main>
 
-  <footer>
-    <p>&copy; 2025 My Online Shop</p>
-  </footer>
+  <!-- Cart Modal -->
+  <div id="cart-modal" class="cart-modal hidden">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <button onclick="closeCart()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
